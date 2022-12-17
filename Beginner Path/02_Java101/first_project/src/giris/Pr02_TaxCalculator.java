@@ -1,3 +1,12 @@
+/**
+ * A tax calculator program
+ * that calculates the tax rate and the
+ * price with tax when the price is entered.
+ *
+ * @author: Yağmur Yıldız
+ * @date: 17 Dec 2022
+ */
+
 package giris;
 import java.util.Scanner;
 
