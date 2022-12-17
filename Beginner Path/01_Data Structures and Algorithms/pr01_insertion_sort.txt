@@ -1,0 +1,33 @@
+[patika.dev](patika.dev) Backend Path  
+Data Structures and Algorithms  
+Date: 14 December 2022 
+
+
+# Insertion Sort
+
+Array = [22,27,16,2,18,6] 
+
+**Solution**   
+Step 1: no swap [22 27]  
+Step 2: [22 16 27 2 18 6] -> [16 22 27 2 18 6]  
+Step 3: [16 22 2 27 18 6] -> [16 2 22 27 18 6] -> [2 16 22 27 18 6]  
+Step 4: [2 16 22 18 27 6] -> [2 16 18 22 27 6]  
+Step 5: [2 16 22 18 6 27] -> [2 16 22 6 18 27] -> [2 16 6 18 22 27] -> [2 7 16 18 22 27]  
+
+**Result** [2 7 16 18 22 27]  
+
+**Big-O-Notation** n^2 = 6^2 = 36
+
+**Time Complexity** for 18, Average Case
+
+
+# Selection Sort
+
+Array = [7,3,5,8,2,9,4,15,6]  
+
+**Solution**  
+Step 1: [2 3 5 8 7 9 4 15 6]  
+Step 2: [2 3 4 8 7 9 5 15 6]  
+Step 3: [2 3 4 5 7 9 8 15 6]  
+Step 4: [2 3 4 5 7 8 9 15 6]  
+
