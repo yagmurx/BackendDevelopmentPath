@@ -6,7 +6,6 @@
  */
 
 package giris;
-import java.sql.SQLOutput;
 import java.util.Scanner;
 public class Pr07_GroceryCalculator {
     public static void main(String[] args) {
