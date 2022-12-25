@@ -1,5 +1,5 @@
 /**
- * Program that calculate perimeter & area of a circle from radius.
+ * A program that calculates the perimeter & area of a circle from a radius.
  *
  * @author: Yagmur Yildiz
  * @date: 25 December 2022
