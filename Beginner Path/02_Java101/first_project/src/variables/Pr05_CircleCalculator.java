@@ -4,7 +4,7 @@
  * @author: Yagmur Yildiz
  * @date: 25 December 2022
  */
-package giris;
+package variables;
 import java.util.Scanner;
 
 public class Pr05_CircleCalculator {

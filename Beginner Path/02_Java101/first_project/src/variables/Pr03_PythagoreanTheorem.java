@@ -5,7 +5,7 @@
  * @date: 17 December 2022
  */
 
-package giris;
+package variables;
 import java.util.Scanner;
 public class Pr03_PythagoreanTheorem {
     public static void main(String[] args) {

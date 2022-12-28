@@ -1,4 +1,4 @@
-package giris;
+package variables;
 
 public class _01_what_is_variable {
     public static void main(String[] args) {

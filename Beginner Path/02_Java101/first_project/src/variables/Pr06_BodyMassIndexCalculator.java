@@ -5,8 +5,7 @@
  * @date: 25 December 2022
  */
 
-package giris;
-import java.sql.SQLOutput;
+package variables;
 import java.util.Scanner;
 public class Pr06_BodyMassIndexCalculator {
     public static void main(String[] args) {

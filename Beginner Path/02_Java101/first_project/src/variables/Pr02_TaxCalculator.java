@@ -7,7 +7,7 @@
  * @date: 17 Dec 2022
  */
 
-package giris;
+package variables;
 import java.util.Scanner;
 
 public class Pr02_TaxCalculator {

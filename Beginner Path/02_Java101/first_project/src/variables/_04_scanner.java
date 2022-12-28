@@ -1,4 +1,4 @@
-package giris;
+package variables;
 import java.util.Scanner;
 public class _04_scanner {
     public static void main(String[] args) {

@@ -9,7 +9,7 @@
 
 
 
-package giris;
+package variables;
 import java.util.Scanner;
 public class Pr01_gradeCalculator {
     public static void main(String[] args) {

@@ -5,7 +5,7 @@
  * @date: 25 December 2022
  */
 
-package giris;
+package variables;
 import java.util.Scanner;
 public class Pr07_GroceryCalculator {
     public static void main(String[] args) {

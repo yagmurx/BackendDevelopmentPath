@@ -1,4 +1,4 @@
-package giris;
+package variables;
 
 public class _02_data_types {
     public static void main(String[] args) {

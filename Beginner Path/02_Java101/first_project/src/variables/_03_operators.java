@@ -1,4 +1,4 @@
-package giris;
+package variables;
 
 public class _03_operators {
     public static void main(String[] args) {
