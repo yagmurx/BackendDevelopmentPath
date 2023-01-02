@@ -1,3 +1,9 @@
+/**
+ *  Basic math calculator
+ *
+ * @author: Yagmur Yildiz
+ * @date: 1 January 2023
+ */
 package conditions;
 import java.util.Scanner;
 
