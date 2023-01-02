@@ -26,7 +26,6 @@ public class _02_ConditionsSWITCH {
             case 7:
                 System.out.println("Sunday");
                 break;
-
         }
     }
 }
