@@ -1,5 +1,5 @@
 /**
- *  A program that summs odd numbers
+ *  A program that sums odd numbers
  */
 
 
