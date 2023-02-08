@@ -40,3 +40,18 @@ WHERE NOT column1 = 14.99;
 SELECT 0 FROM table1
 WHERE column1 < 14.99 AND column1 > 9.99;  
 ```
+
+## BETWEEN & IN
+
+```
+ SELECT column1, column2 FROM table1
+ WHERE column2 BETWEEN 90 AND 120;
+
+ SELECT column1, column2 FROM table
+ WHERE (column1 BETWEEN 2 AND 4) AND (column2 BETWEEN 10 AND 20);
+
+ SELECT * FROM table1
+ WHERE length IN (40, 50, 60);
+
+ 
+```
