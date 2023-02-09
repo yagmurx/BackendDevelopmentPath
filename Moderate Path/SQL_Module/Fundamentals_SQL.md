@@ -1,7 +1,8 @@
 #  Fundamentals of SQL
 - SQL is a declarative language.
 - Queries are seperated by semicolumn [;]
-- 
+- Komutlar key sensitive değildir.
+- Karşılaştırma veya arama yapılan veriler key sensitivedir.
 
 ## SELECT 
 
@@ -52,6 +53,23 @@ WHERE column1 < 14.99 AND column1 > 9.99;
 
  SELECT * FROM table1
  WHERE length IN (40, 50, 60);
+```
 
- 
+## LIKE & ILIKE
+
+```
+SELECT * FROM table1
+WHERE column1 LIKE 'A%'; // '%y' or 'A%y' possibiles
+
+SELECT * FROM table1
+WHERE column1 ILIKE 'a%';
+
+SELECT * FROM table1
+WHERE column1 LIKE 'J_n';
+
+SELECT * FROM table1
+WHERE column1 ~~ 'B%';
+
+SELECT * FROM table1
+WHERE column1 ~~* 'b%';
 ```
