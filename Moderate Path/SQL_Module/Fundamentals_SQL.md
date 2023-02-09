@@ -73,3 +73,15 @@ WHERE column1 ~~ 'B%';
 SELECT * FROM table1
 WHERE column1 ~~* 'b%';
 ```
+
+## DISTINCT & COUNT
+
+```
+SELECT DISTINCT column1 FROM table1; //benzersiz değerleri döndürür
+
+SELECT DISTINCT column1 FROM table1
+WHERE column1 LIKE 'A%';
+
+SELECT COUNT(column1) FROM table1
+WHERE column1 LIKE 'A%';
+```
