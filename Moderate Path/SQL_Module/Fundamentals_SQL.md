@@ -1,8 +1,8 @@
 #  Fundamentals of SQL
 - SQL is a declarative language.
 - Queries are seperated by semicolumn [;]
-- Komutlar key sensitive değildir.
-- Karşılaştırma veya arama yapılan veriler key sensitivedir.
+- Query commands are not key-sensitive.
+- The string content used for comparing or searching is key-sensitive.
 
 ## SELECT 
 
