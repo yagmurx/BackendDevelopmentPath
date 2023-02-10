@@ -78,3 +78,10 @@ GROUP BY customer_id
 HAVING COUNT(*) > 100
 ORDER BY SUM(amount);
 ```
+
+## ALIAS
+```
+SELECT first_name AS "First Name", last_name AS "Last Name" FROM actor;
+
+SELECT CONCAT(first_name, ' ', last_name) AS "Full Name" FROM actor;
+```
