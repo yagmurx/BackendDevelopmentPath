@@ -30,3 +30,16 @@ SELECT * FROM table1
 OFFSET 6
 LIMIT 4;
 ```
+
+## AGGREGATE FUNCTIONS
+```
+SELECT MAX(column1) FROM table1;
+
+SELECT MIN(column1) FROM table1;
+
+SELECT AVG(column1) FROM table1;
+
+SELECT ROUND(AVG(column1), 3) FROM table1;
+
+SELECT SUM(column1) FROM table1;
+```
