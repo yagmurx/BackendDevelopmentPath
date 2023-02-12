@@ -67,3 +67,52 @@ DELETE FROM <table_name>
 WHERE condition;
 	 
 ``` 
+
+## PRIMARY & FOREIGN KEY
+```
+CREATE TABLE book (
+	id SERIAL PRIMARY KEY,
+	title VARCHAR(100) NOT NULL,
+	page_number INTEGER NOT NULL,
+	author_id INTEGER REFERENCES author(id)
+);
+```
+
+## DATATYPES
+[PostgreSQL Docs](https://www.postgresql.org/docs/current/datatype.html)
+
+## ALTER & NOT NULL
+```
+ALTER TABLE users
+ALTER COLUMN username
+SET NOT NULL;
+
+DELETE FROM users
+WHERE username IS NULL;
+```
+
+## UNIQUE
+```
+CREATE TABLE users (
+	id SERIAL PRIMARY KEY,
+	username VARCHAR(20) NOT NULL,
+	email VARCHAR(50) UNIQUE,
+	age INT
+);
+
+ALTER users
+ADD UNIQUE(email); 
+```
+## CHECK
+```
+CREATE TABLE products (
+	product_no INTEGER,
+	name TEXT,
+	price NUMERIC CHECK(price > 0),
+	discounted_price NUMERIC CHECK(discounted_price > 0),
+	CHECK (price > discounted_price)
+); 
+
+ALTER TABLE users
+ADD CHECK (age > 18);
+```
