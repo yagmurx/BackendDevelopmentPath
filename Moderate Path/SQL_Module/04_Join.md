@@ -48,3 +48,48 @@ SELECT * FROM author
 FULL OUTER JOIN book ON author.id = book.author_id
 WHERE (book.id IS NULL OR author.id IS NULL)
 ```
+
+## UNION
+```
+(
+    SELECT * FROM book
+    ORDER BY page_number DESC
+    LIMIT 5
+)
+UNION //If there is an itersection, it doesn't show the duplicate data. For showing that use 'UNION ALL' 
+(
+    SELECT * FROM book
+    ORDER BY title
+    LIMIT 5
+);
+```
+
+## INTERSECT & EXCEPT
+```
+(
+    SELECT * FROM book
+    ORDER BY page_number DESC
+    LIMIT 5
+)
+INTERSECT // Get intersection of two query
+(
+    SELECT * FROM book
+    ORDER BY title
+    LIMIT 5
+);
+
+[a, b, c, d, e] [e, f, g, h, j] INTERSECT = [e]
+
+(
+    SELECT * FROM book
+    ORDER BY page_number DESC
+    LIMIT 5
+)
+EXCEPT // Get first query results which is not intersect of second query
+(
+    SELECT * FROM book
+    ORDER BY title
+    LIMIT 5
+);
+[a, b, c, d, e] [e, f, g, h, j] EXCEPT = [a, b, c, d]
+```
