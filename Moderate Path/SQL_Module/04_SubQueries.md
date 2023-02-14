@@ -61,3 +61,24 @@ WHERE id > ALL
     WHERE title = 'The Alchemist' OR 'Blindless'
 );
 ```
+
+## SUBQUERY AND JOIN
+```
+SELECT author.first_name, author.last_name, book.title, book.page_number
+FROM author
+INNER JOIN book
+ON book.author_id = author.id
+WHERE page_number >
+(
+    SELECT AVG(page_number) FROM book
+);
+
+SELECT actor.first_name, actor.last_name, film.title, film.length
+FROM actor
+INNER JOIN film_actor ON film_actor.actor_id = actor.actor_id
+INNER JOIN film       ON film.film_id = film_actor.film_id
+WHERE length =
+(
+    SELECT MAX(length) FROM film
+);
+```
