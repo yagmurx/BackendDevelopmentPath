@@ -114,6 +114,9 @@ db.post.find().limit(2)
 db.posts.find().sort({title: -1}).limit(2)
 
 db.posts.find().forEach(function(doc){ print('Blog Post: '+ doc.title)})
+
+db.posts.find({ views: {$gt: 3 }})
+// gt: greater than  gte: greater than and equal
 ```
 
 **Updating Document Fields**
@@ -145,5 +148,38 @@ db.posts.update({title: 'Post One'}, { $inc { likes: 2}})
 
 // Rename a field
 db.posts.update({title: 'Post One'}, { $rename { likes: 'views'}})
-```
 
+db.posts.update({ title: 'Post One'},
+    {
+        $set: {
+            comments: [
+                {
+                    user: 'Mary Williams',
+                    body: 'Comment One',
+                    date: Date()
+                },
+                {
+                    user: 'Harry White',
+                    body: 'Comment Two',
+                    date: Date()
+                }
+            ]
+        }
+    }
+)
+
+db.posts.find( {
+    comments: {
+        $elemMatch: {
+            user: 'Mary Williams'
+        }
+    }
+}) // This command gets document which contain a comment from 'Marry Williams'
+
+// Text Searching
+db.posts.find({ $text: { $search: "\"Post T\""}})
+```
+** Adding Index**
+```
+db.posts.createIndex({title: 'text'})
+```
