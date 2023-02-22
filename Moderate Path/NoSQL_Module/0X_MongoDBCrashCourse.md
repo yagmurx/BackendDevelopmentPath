@@ -92,4 +92,58 @@ db.posts.insertMany([
         date: Date()
     }
 ])
+
+db.posts.remove({title: 'Post Four'})
 ```
+
+**Query Commands**
+```
+db.posts.find() //mass
+db.posts.find().pretty() // with stacks
+
+
+db.post.find({category: 'News'})
+db.post.find({category: 'News'}).pretty()
+
+db.posts.find().sort({title: 1}) // ASC for 1, DESC for -1
+
+db.post.find({category: 'News'}).count()
+
+db.post.find().limit(2)
+
+db.posts.find().sort({title: -1}).limit(2)
+
+db.posts.find().forEach(function(doc){ print('Blog Post: '+ doc.title)})
+```
+
+**Updating Document Fields**
+```
+db.posts.update({title: 'Post Two'},
+    {
+        title: 'Post Two',
+        body: 'New psot 2 body',
+        date: Date()
+    },
+    {
+        upsert: true
+    }
+)
+
+// Adding new field
+
+db.posts.update( {title: 'Post Two},
+    {
+        $set: {
+            body: 
+            category: 'Technology'
+        }
+    }
+)
+
+// Increment an integer
+db.posts.update({title: 'Post One'}, { $inc { likes: 2}})
+
+// Rename a field
+db.posts.update({title: 'Post One'}, { $rename { likes: 'views'}})
+```
+
