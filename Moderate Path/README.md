@@ -5,5 +5,5 @@
   - **GIT 201**
   - **Career as a Developer**
   - [**SQL**](./SQL_Module/)
-  - **Java 102**
+  - [**Java 102**](./Java102/)
   - [**NoSQL - MongoDB**](./NoSQL_Module/)
