@@ -15,4 +15,9 @@ public class TeachingAssistant extends Academician {
     public void setRoomNum(String roomNum) {
         this.roomNum = roomNum;
     }
+
+    @Override
+    public void attendLecture(String Time) {
+        System.out.println(this.getFullName() + " entered lesson at " + Time);
+    }
 }

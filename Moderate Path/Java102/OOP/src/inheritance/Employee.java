@@ -44,4 +44,10 @@ public class Employee {
     public  void cafeteria() {
         System.out.println(this.fullName + " entered the cafeteria.");
     }
+    // POLYMORPHISM
+    public static void enteredEmployees(Employee[] Queue) {
+        for(Employee e: Queue) {
+            e.enter();
+        }
+    }
 }
