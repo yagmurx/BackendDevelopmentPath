@@ -1,6 +1,5 @@
 package Project_Adventure_Game;
 
-import java.sql.SQLOutput;
 import java.util.Scanner;
 
 public class Player {
@@ -15,11 +14,12 @@ public class Player {
 
     public Player(String name) {
         this.name = name;
+        this.inventory = new Inventory();
     }
 
     public void selectCharacter() {
 
-        PlayerCharacter[] charList = {new Samurai(), new Archer(), new Knight()};
+        PlayerCharacter[] charList = {new charSamurai(), new charArcher(), new charKnight()};
 
         System.out.println("====================================================");
         for(PlayerCharacter pc : charList) {
@@ -34,16 +34,16 @@ public class Player {
 
         switch (selectChar) {
             case 1:
-                initPlayer(new Samurai());
+                initPlayer(new charSamurai());
                 break;
             case 2:
-                initPlayer(new Archer());
+                initPlayer(new charArcher());
                 break;
             case 3:
-                initPlayer(new Knight());
+                initPlayer(new charKnight());
                 break;
             default:
-                initPlayer(new Samurai());
+                initPlayer(new charSamurai());
         }
 
         System.out.println(this.getName() + ", you are a " + this.getCharacterName());
@@ -55,6 +55,13 @@ public class Player {
         this.setDamage(pc.getDamage());
         this.setHealth(pc.getHealth());
         this.setMoney(pc.getMoney());
+    }
+
+    public void printInfo() {
+        System.out.println( "Weapon: " + this.getInventory().getWeapon().getName() +
+                            "\t Damage: " + this.getDamage() +
+                            "\t Health: " + this.getHealth() +
+                            "\t Money: " + this.getMoney());
     }
     public String getName() {
         return name;
@@ -81,7 +88,7 @@ public class Player {
     }
 
     public int getDamage() {
-        return damage;
+        return damage + this.getInventory().getWeapon().getDamage();
     }
 
     public void setDamage(int damage) {
