@@ -59,7 +59,9 @@ public class Player {
 
     public void printInfo() {
         System.out.println( "Weapon: " + this.getInventory().getWeapon().getName() +
+                            "\t Armor: " + this.getInventory().getArmor().getName() +
                             "\t Damage: " + this.getDamage() +
+                            "\t Defence: " + this.getInventory().getArmor().getDefence() +
                             "\t Health: " + this.getHealth() +
                             "\t Money: " + this.getMoney());
     }
