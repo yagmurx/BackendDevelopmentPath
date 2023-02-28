@@ -19,6 +19,9 @@ public class Game {
             System.out.println("Where do you want to go?");
             System.out.println("1 - Safe House" +
                                "\n2 - Store" +
+                               "\n3 - Cave" +
+                               "\n4 - Forest" +
+                               "\n5 - River" +
                                "\n0 - Exit Game");
             System.out.print("Select a location: ");
             int selectLoc = input.nextInt();
@@ -32,6 +35,15 @@ public class Game {
                     break;
                 case 2:
                     location = new LocStore(player);
+                    break;
+                case 3:
+                    location = new LocCave(player);
+                    break;
+                case 4:
+                    location = new LocForest(player);
+                    break;
+                case 5:
+                    location = new LocRiver(player);
                     break;
                 default:
                     location = null;
