@@ -6,6 +6,7 @@ public class Player {
     private String name;
     private int money;
     private int health;
+    private int orjHealth;
     private int damage;
     private String characterName;
     private Inventory inventory;
@@ -54,16 +55,23 @@ public class Player {
         this.setCharacterName(pc.getName());
         this.setDamage(pc.getDamage());
         this.setHealth(pc.getHealth());
+        this.setOrjHealth(pc.getHealth());
         this.setMoney(pc.getMoney());
     }
 
     public void printInfo() {
-        System.out.println( "Weapon: " + this.getInventory().getWeapon().getName() +
+        System.out.println( "========================================================" +
+                            "\nWeapon: " + this.getInventory().getWeapon().getName() +
                             "\t Armor: " + this.getInventory().getArmor().getName() +
-                            "\t Damage: " + this.getDamage() +
+                            "\t Damage: " + this.getTotalDamage() +
                             "\t Defence: " + this.getInventory().getArmor().getDefence() +
                             "\t Health: " + this.getHealth() +
-                            "\t Money: " + this.getMoney());
+                            "\t Money: " + this.getMoney() +
+                            "\n========================================================");
+    }
+
+    public int getTotalDamage() {
+        return damage + this.getInventory().getWeapon().getDamage();
     }
     public String getName() {
         return name;
@@ -89,8 +97,16 @@ public class Player {
         this.health = health;
     }
 
+    public int getOrjHealth() {
+        return orjHealth;
+    }
+
+    public void setOrjHealth(int orjHealth) {
+        this.orjHealth = orjHealth;
+    }
+
     public int getDamage() {
-        return damage + this.getInventory().getWeapon().getDamage();
+        return damage;
     }
 
     public void setDamage(int damage) {

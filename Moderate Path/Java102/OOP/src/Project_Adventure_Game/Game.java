@@ -14,22 +14,19 @@ public class Game {
         Location location = new LocSafeHouse(player);
         while(true) {
             player.printInfo();
-            System.out.println("====================================================");
             System.out.println("You are at: "+ location.getName());
             System.out.println("Where do you want to go?");
-            System.out.println("1 - Safe House" +
-                               "\n2 - Store" +
-                               "\n3 - Cave" +
-                               "\n4 - Forest" +
-                               "\n5 - River" +
-                               "\n0 - Exit Game");
+            System.out.println("""
+                    1 - Safe House
+                    2 - Store
+                    3 - Cave
+                    4 - Forest
+                    5 - River
+                    0 - Exit Game""");
             System.out.print("Select a location: ");
             int selectLoc = input.nextInt();
 
             switch (selectLoc) {
-                case 0:
-                    location = null;
-                    break;
                 case 1:
                     location = new LocSafeHouse(player);
                     break;
@@ -37,13 +34,28 @@ public class Game {
                     location = new LocStore(player);
                     break;
                 case 3:
-                    location = new LocCave(player);
+                    if(player.getInventory().isFood()) {
+                        System.out.println("You already cleaned the Cave.");
+                        location = new LocSafeHouse(player);
+                    }else {
+                        location = new LocCave(player);
+                    }
                     break;
                 case 4:
-                    location = new LocForest(player);
+                    if(player.getInventory().isFirewood())  {
+                        System.out.println("You already cleaned the Forest.");
+                        location = new LocSafeHouse(player);
+                    }else {
+                        location = new LocForest(player);
+                    }
                     break;
                 case 5:
-                    location = new LocRiver(player);
+                    if(player.getInventory().isWater()) {
+                        System.out.println("You already cleaned the River.");
+                        location = new LocSafeHouse(player);
+                    }else {
+                        location = new LocRiver(player);
+                    }
                     break;
                 default:
                     location = null;
@@ -52,11 +64,16 @@ public class Game {
                 System.out.println("YOU GIVE UP, GAME OVER! ");
                 break;
             }
+            if(location.getName() == "Safe House") {
+                if(player.getInventory().isWater() && player.getInventory().isFood() && player.getInventory().isFirewood()) {
+                    System.out.println("YOU WON THE GAME!");
+                    break;
+                }
+            }
             if(! location.atLocation()) {
                 System.out.println("YOU LOST, GAME OVER! ");
                 break;
             }
-            System.out.println("====================================================");
         }
     }
 }

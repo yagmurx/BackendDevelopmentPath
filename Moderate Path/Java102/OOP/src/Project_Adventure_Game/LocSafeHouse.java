@@ -9,6 +9,7 @@ public class LocSafeHouse extends SafeLocation {
     public boolean atLocation() {
         System.out.println("You are at " + this.getName());
         System.out.println("Your hearth is full");
+        this.getPlayer().setHealth(this.getPlayer().getOrjHealth());
         return true;
     }
 }
