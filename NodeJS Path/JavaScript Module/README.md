@@ -1,0 +1,11 @@
+# JavaScript Module
+- Variables
+- DOM (Document Object Model)
+- Decision Structures
+- Functions
+- localStorage
+- Form
+- Arrays
+- Loops
+- Object
+- Fetch API
