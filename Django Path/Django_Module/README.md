@@ -178,3 +178,13 @@ python manage.py createsuperuser
 
    ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
    ```
+
+   ### 05d - Admin Console Customization
+   courses -> admin.py
+   ```
+   @admin.register(Course)
+   class CourseAdmin(admin.ModelAdmin):
+      list_display = ('name', 'available')
+      list_filter = ('available',)
+      search_fields = ('name', 'description')
+   ```
