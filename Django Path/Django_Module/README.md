@@ -128,7 +128,7 @@ Partials are created by making separate files into sections such as the header o
    {% endblock %}                         // end of code                    
    ```
 *NOTE* You can turn all sections to separate files with this method (footer, navbar etc.)
-## 05 - Migrations
+## 05 - Model Layer | Migrations
 ### 05a - Creating data tables
 cmd
 ```
@@ -188,3 +188,4 @@ python manage.py createsuperuser
       list_filter = ('available',)
       search_fields = ('name', 'description')
    ```
+## 06 - View Layer | Class-Based
