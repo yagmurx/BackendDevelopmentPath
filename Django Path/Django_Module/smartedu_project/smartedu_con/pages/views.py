@@ -1,6 +1,9 @@
 from django.shortcuts import render
 from django.views.generic import TemplateView
+from django.views.generic.edit import FormView
 from courses.models import Course
+from . forms import ContactForm
+from django.urls import reverse_lazy
 
 #========
 # Function-based view layer
@@ -25,3 +28,11 @@ class IndexView(TemplateView):
 class AboutView(TemplateView):
     template_name = 'about.html'
 
+class ContactView(FormView):
+    template_name = 'contact.html'
+    form_class = ContactForm
+    success_url = reverse_lazy('contact')
+
+    def form_valid(self, form):
+        form.save()
+        return super().form_valid(form)
