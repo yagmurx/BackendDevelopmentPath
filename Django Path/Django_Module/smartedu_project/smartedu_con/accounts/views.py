@@ -61,7 +61,7 @@ def user_dashboard(request):
         'courses' : courses
     }
 
-    return render(request, 'dashboard.html')
+    return render(request, 'dashboard.html', context)
 
 
 def enroll_the_course(request):
