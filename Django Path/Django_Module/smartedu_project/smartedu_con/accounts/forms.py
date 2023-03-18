@@ -1,5 +1,7 @@
 from django import forms
 from django.contrib.auth.forms import UserCreationForm
+from django.contrib.auth.models import User
+
 
 class LoginForm(forms.Form):
     username = forms.CharField(widget=forms.TextInput(attrs={
@@ -11,33 +13,37 @@ class LoginForm(forms.Form):
         'placeholder': 'Password'
     }))
 
-
 class RegisterForm(UserCreationForm):
     first_name = forms.CharField(widget=forms.TextInput(attrs={
         'class': 'form-control',
         'placeholder': 'First Name'
     }))
+
     last_name = forms.CharField(widget=forms.TextInput(attrs={
         'class': 'form-control',
         'placeholder': 'Last Name'
     }))
+
     username = forms.CharField(widget=forms.TextInput(attrs={
         'class': 'form-control',
         'placeholder': 'Username'
     }))
-    email = forms.EmailField(widget=forms.EmailInput(attrs={
+
+    email = forms.CharField(widget=forms.EmailInput(attrs={
         'class': 'form-control',
-        'placeholder': 'Your Email'
+        'placeholder': 'Email'
     }))
-    password = forms.CharField(widget=forms.PasswordInput(attrs={
+
+    password1 = forms.CharField(widget=forms.PasswordInput(attrs={
         'class': 'form-control',
         'placeholder': 'Password'
     }))
-    password_check = forms.CharField(widget=forms.PasswordInput(attrs={
+
+    password2 = forms.CharField(widget=forms.PasswordInput(attrs={
         'class': 'form-control',
-        'placeholder': 'Retype Password'
+        'placeholder': 'Re-Type Password'
     }))
 
     class Meta:
         model = User
-        fields = ['first_name', 'last_name', 'username', 'email', 'password', 'password_check']
+        fields = ['first_name','last_name', 'username', 'email', 'password1', 'password2']
