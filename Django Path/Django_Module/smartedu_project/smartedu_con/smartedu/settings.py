@@ -21,12 +21,11 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # See https://docs.djangoproject.com/en/4.1/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = 'django-insecure-x8x)br@cbkadh^#=8*pt9b4y297qvkn&o=!q)k$p2pih9@lg+9'
+SECRET_KEY = 'django-insecure-*n-ff@(*hgk3j2ibmbam)cy3#b(e(9rd5314t92d%=svbq-2t*'
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-# ALLOWED_HOSTS = ['smartedu-project-trail.herokuapp.com/', '127.0.0.1']
 ALLOWED_HOSTS = []
 
 
@@ -46,7 +45,7 @@ INSTALLED_APPS = [
 ]
 
 MIDDLEWARE = [
-    'django.middleware.security.SecurityMiddleware',
+     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
     'django.middleware.csrf.CsrfViewMiddleware',
