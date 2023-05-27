@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="4bc06bae-9260-4823-a153-adcfa60a9c20" name="Changes" comment="spring bootcamp week 3">
+      <change afterPath="$PROJECT_DIR$/../../Beginner Path/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Beginner Path/02_Java101/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Beginner Path/02_Java101/first_project/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Moderate Path/Java102/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Spring_Bootcamp/.mvn/wrapper/maven-wrapper.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Spring_Bootcamp/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Spring_Bootcamp/mvnw" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Spring_Bootcamp/mvnw.cmd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Spring_Bootcamp/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Spring_Bootcamp/src/main/java/com/yagmuryildiz/spring_bootcamp/ServletInitializer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Spring_Bootcamp/src/main/java/com/yagmuryildiz/spring_bootcamp/SpringBootcampControllerApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Spring_Bootcamp/src/main/java/com/yagmuryildiz/spring_bootcamp/TestController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Spring_Bootcamp/src/main/java/com/yagmuryildiz/spring_bootcamp/UserController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Spring_Bootcamp/src/main/java/com/yagmuryildiz/spring_bootcamp/UserSaveRequestDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Spring_Bootcamp/src/main/java/com/yagmuryildiz/spring_bootcamp/entity/Customer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Spring_Bootcamp/src/main/java/com/yagmuryildiz/spring_bootcamp/enums/EnumStatus.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Spring_Bootcamp/src/main/resources/application.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Spring_Bootcamp/src/main/resources/banner.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Spring_Bootcamp/src/test/java/com/yagmuryildiz/spring_bootcamp/SpringBootcampControllerApplicationTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Spring_Bootcamp/target/classes/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../../Spring_Bootcamp/target/classes/application.properties" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Record" />
+        <option value="Class" />
+        <option value="Enum" />
+        <option value="Interface" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+    <option name="ROOT_SYNC" value="SYNC" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="mavenHome" value="Use Maven wrapper" />
+        <option name="useMavenConfig" value="true" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="ProjectId" id="2Q1kA5VtjDX2gIkMJB0WbdVETZV" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
+    "Downloaded.Files.Path.Enabled": "false",
+    "Repository.Attach.Annotations": "false",
+    "Repository.Attach.JavaDocs": "false",
+    "Repository.Attach.Sources": "false",
+    "RequestMappingsPanelOrder0": "0",
+    "RequestMappingsPanelOrder1": "1",
+    "RequestMappingsPanelWidth0": "75",
+    "RequestMappingsPanelWidth1": "75",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "git-widget-placeholder": "master",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.6528736",
+    "spring.configuration.checksum": "d3ce8a23a48b83a120cfec12c2f65a31",
+    "vue.rearranger.settings.migration": "true"
+  },
+  "keyToStringList": {
+    "DatabaseDriversLRU": [
+      "postgresql"
+    ]
+  }
+}]]></component>
+  <component name="RunManager">
+    <configuration default="true" type="JetRunConfigurationType">
+      <module name="spring_bootcamp" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType">
+      <module name="spring_bootcamp" />
+      <option name="filePath" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SpringBootcampControllerApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="spring_bootcamp" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.yagmuryildiz.spring_bootcamp.SpringBootcampControllerApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="4bc06bae-9260-4823-a153-adcfa60a9c20" name="Changes" comment="" />
+      <created>1684528328698</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1684528328698</updated>
+      <workItem from="1684528329918" duration="4149000" />
+      <workItem from="1684656636840" duration="40000" />
+      <workItem from="1684656833020" duration="106000" />
+      <workItem from="1685177253058" duration="2076000" />
+      <workItem from="1685221147279" duration="5643000" />
+    </task>
+    <task id="LOCAL-00001" summary="RestController learned">
+      <created>1684533249589</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1684533249589</updated>
+    </task>
+    <task id="LOCAL-00002" summary="RestController learned">
+      <created>1685225824838</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1685225824838</updated>
+    </task>
+    <task id="LOCAL-00003" summary="spring bootcamp week 3">
+      <created>1685225919888</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1685225919888</updated>
+    </task>
+    <task id="LOCAL-00004" summary="spring bootcamp week 3">
+      <created>1685226005515</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1685226005515</updated>
+    </task>
+    <task id="LOCAL-00005" summary="spring bootcamp week 3">
+      <created>1685226872457</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1685226872457</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <MESSAGE value="RestController learned" />
+    <MESSAGE value="spring bootcamp week 3" />
+    <option name="LAST_COMMIT_MESSAGE" value="spring bootcamp week 3" />
+    <option name="GROUP_MULTIFILE_MERGE_BY_DIRECTORY" value="true" />
+  </component>
+</project>
